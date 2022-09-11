@@ -23,3 +23,7 @@ def about():
 @app.route("/objects")
 def objects():
     return render_template("objects.html")
+
+@app.route("/classes")
+def classes():
+    return render_template("classes.html")

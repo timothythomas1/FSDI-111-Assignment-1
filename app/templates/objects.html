@@ -5,7 +5,35 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>Objects</h1>
-    <p>Objects are to classes what houses are to blueprints</p>
-    <p>Simply put, an object is an instance of a class...</p>
+    <div class="top-banner">
+        <h1>Objects</h1>
+    </div>
+    <p>In computer science, an object can be a variable, a data structure, a function, or a method. As regions of memory, they contain value and are referenced by identifiers. They can be Lists or Dictionaries in Python.</p>
+    <p>Simply put, an object is an instance of a class below.</p>
+    <p>A direct way to create objects is what we call an 'object literal'. We just hard code the values in. </p>
+    <pre class="prettyprint lang-py">
+        numsList = [1, 3, [2, 4, 6]]
+        daysDictionary = { 'Sun', 'Mon', 'Tue', 'Wed' }
+        emptyObjectList = []
+        emptyObjectDictionary = {}
+    </pre>
+    <p>An object can also be instantiated or created by the following "constructor" function or Class and finally is saved to the variable, myHero, which takes on the attributes and methods.</p>
+    <pre class="prettyprint lang-py">
+        class RangedAssaassin:
+            #<i>Attributes</i>
+            strength = 100
+            health = 100
+
+            #<i>methods</i>
+            def sayHi(self):
+                return 'hi'
+    </pre>
+
+    <pre class="prettyprint lang-py">
+        #<i>Instantiation</i>
+        myHero = RangedAssaassin()
+    </pre>
+
+
+
 {% endblock content %}

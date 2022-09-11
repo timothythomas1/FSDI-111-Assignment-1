@@ -1,10 +1,48 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Home
+    Home
 {% endblock title %}
 
 {% block content %}
-    <h1>Home Page</h1>
-    <p>Welome to our new home page! Enjoy your stay</p>
+    <div class="top-banner">
+        <h1>Welcome to OOP</h1>
+        <p>Here are the differences between Objects and Classes</p>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<table>
+  <tr>
+    <th style="width:50%">Objects</th>
+    <th>Classes</th>
+  </tr>
+  <tr>
+    <td>An object is an instance of a class</td>
+    <td>Class is used as a template for declaring and creating the objects </td>
+  </tr>
+  <tr>
+    <td>Objects can be manipulated</td>
+    <td>The class has to be declared first and only once</td>
+  </tr>
+  <tr>
+    <td>An object is a physical entity</td>
+    <td>A class can not be manipulated as they are not available in the memory</td>
+  </tr>
+  <tr>
+    <td>Objects can be manipulated</td>
+    <td>A class is a logical entity</td>
+  </tr>
+  <tr>
+    <td>It is created with a class name in C++ and with the new keywords in Java</td>
+    <td>A class is used to bind data as well as methods together as a single unit</td>
+  </tr>
+  <tr>
+    <td>Each object has its own values, which are associated with it</td>
+    <td>It is declared with the class keyword</td>
+  </tr>
+  <tr>
+    <td>Objects are like a variable of the class</td>
+    <td>Class does not contain any values which can be associated with the field</td>
+  </tr>
+</table>
 {% endblock content %}

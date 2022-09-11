@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Classes
+{% endblock title %}
+
+{% block content %}
+    <div class="top-banner">
+        <h1>Classes</h1>
+    </div>
+    <p>In object-oriented programming, a class is an extensible program-code-template or blueprint for creating objects, providing initial values for state (member variables or attributes) and implementations of behavior (member functions or methods).</p>
+    <p>An example of a class in Python code would be a fictional character type for an online video game.  </p>
+    <pre class="prettyprint lang-py">
+        class RangedAssaassin:
+            #<i>'__init__' is the initial state class </i>
+            def__init__(self, heroName): 
+                <i>#Base attributes after making an assassin obj</i> 
+                self.heroName = heroName
+                self.attackType = "ranged"
+                self.health = 1340
+                self.healthReagen = 2.7
+                self.attackRadius = 0.625
+                self.attackRange = 5.5
+                self.speed = 1.67
+                self.attackDamage = 70
+    
+                <i>#Base methods you can call on after making assassin obj</i>
+                def sprint(self, charge):
+                    self.speed = self.speed * charge
+                def furtherReach(self, vision):
+                    self.attackRange = self.attackRange * charge
+    </pre>
+    <p>We can also note that variables in python are actually classes as well! Python will give the variable below an attribute of type 'int' when you give it a number.</p>
+    <pre class="prettyprint lang-py">
+        var = 300
+    </pre>
+
+        
+{% endblock content %}
